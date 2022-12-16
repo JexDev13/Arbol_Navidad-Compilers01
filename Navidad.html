@@ -48,6 +48,107 @@
             }
         }
 
+
+        .star-light {
+            position: absolute;
+            margin: 88px 300px;
+            width: 10%;
+            height: 14%;
+            background: #fff1bf;
+            filter: opacity(0.7);
+            border-radius: 50%;
+            left: 26.5%;
+            top: 11%;
+            z-index: 3;
+            animation: star 3s ease-in-out infinite;
+        }
+
+        [class^="light"] {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 100%;
+            transition-property: background;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            animation: light 5s;
+            -webkit-animation: light 5s infinite;
+            /* Safari and Chrome */
+            z-index: 3;
+        }
+
+        @keyframes light {
+            0% {
+                background: transparent;
+            }
+
+            50% {
+                background: #000000;
+            }
+
+            100% {
+                background: transparent;
+            }
+        }
+
+        .light1 {
+            margin: 175px 600px;
+        }
+
+        .light2 {
+            margin: 200px 630px;
+            animation-delay: 3s;
+            -webkit-animation-delay: 3s;
+        }
+
+        .light3 {
+            margin: 225px 585px;
+            animation-delay: 2s;
+            -webkit-animation-delay: 2s;
+        }
+
+        .light4 {
+            margin: 250px 655px;
+            animation-delay: 1s;
+            -webkit-animation-delay: 1s;
+        }
+
+        .light5 {
+            margin: 275px 520px;
+            animation-delay: 3s;
+            -webkit-animation-delay: 3s;
+        }
+
+        .light6 {
+            margin: 300px 685px;
+            animation-delay: 2s;
+            -webkit-animation-delay: 2s;
+        }
+
+        .light7 {
+            margin: 325px 685px;
+            animation-delay: 1s;
+            -webkit-animation-delay: 1s;
+        }
+
+        .light8 {
+            margin: 350px 485px;
+            animation-delay: 3s;
+            -webkit-animation-delay: 3s;
+        }
+
+        .light9 {
+            margin: 368px 685px;
+            animation-delay: 2s;
+            -webkit-animation-delay: 2s;
+        }
+
+        .light10 {
+            margin: 400px 485px;
+            animation-delay: 1s;
+            -webkit-animation-delay: 1s;
+        }
+
         img {
             position: absolute;
             margin: 100px 450px;
@@ -95,19 +196,7 @@
             z-index: 4;
         }
 
-        .star-light {
-            position: absolute;
-            margin: 88px 300px;
-            width: 10%;
-            height: 14%;
-            background: #fff1bf;
-            filter: opacity(0.7);
-            border-radius: 50%;
-            left: 26.5%;
-            top: 11%;
-            z-index: 3;
-            animation: star 3s ease-in-out infinite;
-        }
+
 
         @keyframes star {
             100% {
@@ -129,6 +218,17 @@
 
     <h1 class="titulo">if christmas = true then Merry Chrismas!</h1>
 
+    <div class="light1"></div>
+    <div class="light2"></div>
+    <div class="light3"></div>
+    <div class="light4"></div>
+    <div class="light5"></div>
+    <div class="light6"></div>
+    <div class="light7"></div>
+    <div class="light8"></div>
+    <div class="light9"></div>
+    <div class="light10"></div>
+
     <img class="foto1" src="images/tree.png" />
     <img class="foto2" src="images/stars.png" />
     <img class="foto3" src="images/lights.png" />
@@ -137,6 +237,8 @@
     <div class="star-light"></div>
     <div class="star"></div>
     <div class="star-highlight"></div>
+
+
 
     <script>
 
